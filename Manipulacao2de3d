@@ -9,17 +9,17 @@ import java.awt.Point;
 
 public class Exercicio extends JFrame{
 	
-	static int gerador[][] = new int [8][8]; //matrix para geração do objeto
+	static int gerador[][] = new int [8][8]; //matrix para geraÃ§Ã£o do objeto
 	static float mundo[][] = new float [8][8];
 	static float m[][] = new float [3][8]; // Recebe os pontos 
-	static float mTranslacao[][] = new float[3][8]; // matrix de translação
+	static float mTranslacao[][] = new float[3][8]; // matrix de translaÃ§Ã£o
 	static float mEscala[][] = new float[3][8]; // matrix de escala
-	static float mRotacao[][] = new float[3][8]; // matrix de Rotação
+	static float mRotacao[][] = new float[3][8]; // matrix de RotaÃ§Ã£o
 	
 	
-	static float transx, transy, transz; // variaveis para a translação
+	static float transx, transy, transz; // variaveis para a translaÃ§Ã£o
 	static float esx, esy, esz; // variaveis para a escala
-	static double ang; // variaveis para rotação
+	static double ang; // variaveis para rotaÃ§Ã£o
 	
 	static int matrix = 8,eixo = 3; // 
 	
@@ -51,10 +51,10 @@ public class Exercicio extends JFrame{
 		m[0][6] = 200; m[1][6] = 150; m[2][6] = 150;
 		m[0][7] = 100; m[1][7] = 150; m[2][7] = 150;
 	
-//	    ang = Float.parseFloat(JOptionPane.showInputDialog("Digite o angulo de rotação"));
-//		transx = Float.parseFloat(JOptionPane.showInputDialog("Digite a Translação em X"));
-//		transy = Float.parseFloat(JOptionPane.showInputDialog("Digite a Translação em Y"));
-//		transz = Float.parseFloat(JOptionPane.showInputDialog("Digite a Translação em Z"));
+//	    ang = Float.parseFloat(JOptionPane.showInputDialog("Digite o angulo de rotaÃ§Ã£o"));
+//		transx = Float.parseFloat(JOptionPane.showInputDialog("Digite a TranslaÃ§Ã£o em X"));
+//		transy = Float.parseFloat(JOptionPane.showInputDialog("Digite a TranslaÃ§Ã£o em Y"));
+//		transz = Float.parseFloat(JOptionPane.showInputDialog("Digite a TranslaÃ§Ã£o em Z"));
 //	
 		esx = Float.parseFloat(JOptionPane.showInputDialog("Digite a escala em X"));
 		esy = Float.parseFloat(JOptionPane.showInputDialog("Digite a escala em Y"));
@@ -85,7 +85,7 @@ public class Exercicio extends JFrame{
 	}
 
 	public static void rotacao() {
-	//alteração
+	//alteraÃ§Ã£o
 		
 		ang = ang *(Math.PI / 180);
 		for (int i= 0; i<matrix;i++) {
@@ -173,7 +173,7 @@ public class Exercicio extends JFrame{
 			g.drawLine(p6.x, p6.y, p7.x, p7.y);
 			g.drawLine(p7.x, p7.y, p8.x, p8.y);
 			g.drawLine(p8.x, p8.y, p5.x, p5.y);
-			//ligação
+			//ligaÃ§Ã£o
 			g.drawLine(p1.x, p1.y, p2.x, p2.y);
 			g.drawLine(p3.x, p3.y, p3.x, p4.y);
 			g.drawLine(p5.x, p5.y, p6.x, p6.y);
